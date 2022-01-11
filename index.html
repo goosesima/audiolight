@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="audiolight.css" type="text/css">
+    <script src="//unpkg.com/brain.js"></script>
+    <script src="network.js"></script>
+    <title>AudioLight</title>
+</head>
+<body>
+    <div id="connection-container">
+        <h1>AudioLight client</h1>
+        <input type="number" name="code" id="codeConnection" value="???">
+        <button id="power">Power on!</button>
+        <span id="statusMsg">Status: </span>
+        <span id="beat"></span>
+        <span id="current-bpm"></span>
+        <p id='device-name'></p>
+
+        <button id="trainBtn">TRAIN ON</button>
+        <span>Press Z when music kick</span>
+        <p id="zkeystate"> \\ Z // </p>
+        <input type="number" id="sensitivity" max="100" min="0" value="99.764">
+        <p id="aivalue"></p>
+    </div>
+    <script src="audiolight.js"></script>
+</body>
+</html>
